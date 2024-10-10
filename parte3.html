@@ -1,0 +1,183 @@
+<!-- iniciar sesion -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+        :root {
+            --white: #ffffff;
+            --black: #000000;
+            --very-light-pink: #c7c7c7;
+            --text-input-field: #f7f7f7;
+            --hospital-green: #acd9b2;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Quicksand';
+        }
+
+        div.login {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        div.cajaPrincipalLogin {
+            padding: 20px;
+            background-color: rgb(255, 255, 255);
+            width: 300px;
+            height: auto;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin: 0 auto;
+            border: 1px solid var(--very-light-pink);
+            border-radius: 20px;
+
+
+            img.yardSaleLogin {
+                width: 150px;
+                padding-bottom: 60px;
+                display: none;
+            }
+        }
+
+        div.caja-1 {
+            width: 300px;
+            padding-bottom: 25px;
+
+            p {
+                margin: 0;
+                font-weight: bold;
+                padding-bottom: 5px;
+            }
+
+            input {
+                box-sizing: border-box;
+                padding: 4px;
+                width: 300px;
+                background-color: var(--text-input-field);
+                border-radius: 8px;
+                border: none;
+                color: var(--white);
+                cursor: pointer;
+                font-size: var(--md);
+                font-weight: bold;
+                height: 40px;
+            }
+        }
+
+        a.buttonSingUp {
+            width: 300px;
+        }
+
+        button.logIn, button.singUp {
+            width: 300px;
+            background-color: var(--hospital-green);
+            border-radius: 8px;
+            border: none;
+            color: var(--white);
+            width: 100%;
+            cursor: pointer;
+            font-size: var(--md);
+            font-weight: bold;
+            height: 50px;
+            margin: 0 0 10px 0;
+        }
+
+        p.holaLogin {
+            padding: 5px 0 40px 0;
+            color: var(--hospital-green);
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+
+            a {
+                position: absolute;
+                top: 81%;
+                color: var(--hospital-green);
+                text-decoration: none;
+                font-size: var(--lg);
+                font-weight: bold;
+                display: flex;
+                align-items: center;
+                padding: 0 15px 0 0;
+
+                img.return {
+                    height: 12px;
+                    width: 12px;
+                    cursor: pointer;
+                    padding: 0 0 2px 0;
+                    transform: rotate(180deg);
+                    margin: 0 10px 0 0px;
+                }
+            }
+        }
+
+        button.singUp {
+            background-color: var(--white);
+            color: var(--hospital-green);
+            border: 1px solid var(--hospital-green);
+        }
+
+        @media (max-width: 640px) {
+            div.cajaPrincipalLogin {
+                img.yardSaleLogin {
+                    display: block;
+                }
+            }
+
+            p.holaLogin a {
+                top: 88%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="login">
+        <div class="cajaPrincipalLogin">
+
+            <img class="yardSaleLogin" src="./logos/logo_yard_sale.png" alt="">
+
+            <div class="caja-1">
+                <p>Email address</p>
+                <input type="email">
+
+                <p>Password</p>
+                <input type="password">
+            </div>
+
+            <button class="logIn">Log in</button>
+
+            <p class="holaLogin">Forgot my password
+                <br>
+                <a href="./index.html">
+                    <img class="return" src="./icons/flechita.svg" alt="">
+                    return</a>
+            </p>
+
+            <a class="buttonSingUp" href="./clase1.html">
+                <button class="singUp">
+                    Sign up
+                </button>
+            </a>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+        :root {
+            --white: #FFFFFF;
+            --black: #000000;
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        div.myOrders-0 {
+            width: 100%;
+            position: absolute;
+            top: 8vh;
+        }
+
+        div.myOrders {
+            width: 100%;
+            min-height: 92vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .myOrder {
+            width: 300px;
+            margin: 0px 20px 20px 20px;
+            padding: 24px 0 24px 0;
+            font-weight: bold;
+            font-size: var(--lg);
+        }
+
+        .cajaArriba {
+            width: 300px;
+            height: 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px 20px 20px 20px;
+            box-sizing: border-box;
+            border-radius: 8px;
+        }
+
+        .caja {
+            margin: 0;
+            padding: 0;
+        }
+
+        .caja :nth-child(1) {
+            font-size: var(--md);
+            font-weight: bold;
+        }
+
+        .caja :nth-child(2) {
+            font-size: var(--sm);
+            color: var(--very-light-pink);
+        }
+
+        .nice {
+            font-weight: bold;
+            font-size: var(--sm);
+            display: flex;
+            align-items: center;
+            padding-bottom: 3px;
+
+            img {
+                padding: 0 0 0 10px;
+                width: 13px;
+                height: 13px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="myOrders-0">
+        <div class="myOrders">
+            <div class="myOrders-1">
+                <p class="myOrder">
+                    <img src="" alt="">
+                    My orders
+                </p>
+
+                <div class="cajaArriba">
+                    <div class="caja">
+                        <p class="caja">04.25.2021</p>
+                        <p class="caja">6 articles</p>
+                    </div>
+                    <p class="caja nice">$ 560,00
+                        <img src="/icons/flechita.svg" alt="">
+                    </p>
+                </div>
+
+                <div class="cajaArriba">
+                    <div class="caja">
+                        <p class="caja">04.25.2021</p>
+                        <p class="caja">6 articles</p>
+                    </div>
+                    <p class="caja nice">$ 560,00
+                        <img src="/icons/flechita.svg" alt="">
+                    </p>
+                </div>
+
+                <div class="cajaArriba">
+                    <div class="caja">
+                        <p class="caja">04.25.2021</p>
+                        <p class="caja">6 articles</p>
+                    </div>
+                    <p class="caja nice">$ 560,00
+                        <img src="/icons/flechita.svg" alt="">
+                    </p>
+                </div>
+
+                <div class="cajaArriba">
+                    <div class="caja">
+                        <p class="caja">04.25.2021</p>
+                        <p class="caja">6 articles</p>
+                    </div>
+                    <p class="caja nice">$ 560,00
+                        <img src="/icons/flechita.svg" alt="">
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

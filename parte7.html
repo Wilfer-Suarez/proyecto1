@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+        :root {
+            --white: #FFFFFF;
+            --black: #000000;
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+
+        /* :root {
+            background-color: #51a75c;
+        } */
+
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        div.desktop-menu {
+            ul {
+                display: inline-block;
+                list-style: none;
+                margin: 0;
+                padding: 20px 20px;
+                border-radius: 10px;
+                border: 1px solid var(--very-light-pink);
+
+                li {
+                    text-align: right;
+
+                    a {
+                        text-decoration: none;
+                        font-size: var(--sm);
+                    }
+                }
+
+                li:nth-of-type(1), li:nth-of-type(2) {
+                    padding: 0 0 20px 30px;
+                    text-align: right;
+
+                    a {
+                        color: var(--black);
+                        font-weight: bold;
+                    }
+                }
+
+                li:nth-of-type(3) {
+                    padding-top: 20px;
+                    border-top: 1px solid var(--very-light-pink);
+
+                    a {
+                        color: var(--hospital-green);
+                    }
+                }
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="desktop-menu">
+        <ul>
+            <li>
+                <a href="/">My orders</a>
+            </li>
+
+            <li>
+                <a href="/">My account</a>
+            </li>
+
+            <li>
+                <a href="/">Sign out</a>
+            </li>
+        </ul>
+    </div>
+
+</body>
+<div>
+
+</div>
+
+</html>

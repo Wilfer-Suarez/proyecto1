@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+        :root {
+            /* background-color: gray; */
+            --white: #ffffff;
+            --black: #000000;
+            --very-light-pink: #c7c7c7;
+            --text-input-field: #f7f7f7;
+            --hospital-green: #acd9b2;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: 'Quicksand';
+        }
+
+        div.barraLateral {
+            height: 100vh;
+            padding: 50px 25px 0 25px;
+            box-sizing: border-box;
+
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 0 0 25px 0;
+                display: flex;
+
+                a {
+                    text-decoration: none;
+                    color: var(--black);
+                    font-weight: bold;
+                }
+            }
+
+            ul:nth-of-type(7) {
+                border-bottom: 1px solid var(--very-light-pink);
+                padding-bottom: 25px;
+            }
+
+
+            p {
+                margin: 0;
+                padding-bottom: 25px;
+                font-weight: bold;
+            }
+
+            p:nth-of-type(1) {
+                padding-top: 25px;
+            }
+
+            p:nth-of-type(3) {
+                font-weight: normal;
+            }
+
+            p:nth-of-type(4) {
+                padding: 0;
+                color: var(--hospital-green);
+                font-size: var(--sm);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="barraLateral">
+        <ul><a href="">CATEGORIES</a></ul>
+        <ul><a href="">All</a></ul>
+        <ul><a href="">Clothes</a></ul>
+        <ul><a href="">Electronics</a></ul>
+        <ul><a href="">Furnitures</a></ul>
+        <ul><a href="">Toys</a></ul>
+        <ul><a href="">Other</a></ul>
+        <p class="irAMyOrders1">My orders</p>
+        <p class="irAMyAccount1">My account</p>
+        <p>platzy@example.com</p>
+        <p class="irALogin1">Log in</p>
+    </div>
+
+</body>
+
+</html>

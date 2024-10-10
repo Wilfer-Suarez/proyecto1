@@ -1,0 +1,10 @@
+{
+    "project-image-browser.includeFolders": "",
+    "project-image-browser.excludeFolders": "node_modules",
+    "project-image-browser.includeProjectFolders": {
+        "c:\\Users\\Wilfer\\Downloads\\proyectoHtmlCss\\cursoDeFrotendsDeveloperPractico": true
+    },
+    "project-image-browser.imageBackground": "grey",
+    "project-image-browser.imageSize": 100,
+    "image-manager.viewer.imageBackgroundColor": "#8c8c8c"
+}

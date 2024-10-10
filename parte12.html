@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+    :root {
+      --white: #FFFFFF;
+      --black: #000000;
+      --very-light-pink: #C7C7C7;
+      --text-input-field: #F7F7F7;
+      --hospital-green: #ACD9B2;
+      --sm: 14px;
+      --md: 16px;
+      --lg: 18px;
+    }
+
+    * {
+      background-color: var(--white);
+    }
+
+    body {
+      padding: 0;
+      margin: 0;
+      font-family: 'Quicksand', sans-serif;
+    }
+
+    div.cajaPrincipalDetalles {
+      width: 360px;
+      position: absolute;
+      right: 0;
+
+      div.imagenx {
+        position: absolute;
+        width: 14px;
+        height: 14px;
+        top: 20px;
+        left: 20px;
+        padding: 11px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+
+        img.imagenx {
+          width: 14px;
+          height: 14px;
+        }
+      }
+
+      img.portada {
+        width: 100%;
+        border-radius: 0 0 20px 20px;
+      }
+
+      div.cajaDetalles {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 20px;
+
+        p:nth-child(1) {
+          font-weight: bold;
+          font-size: var(--md);
+          margin-bottom: 0;
+        }
+
+        p:nth-child(2) {
+          font-size: var(--md);
+          margin-top: 3px;
+        }
+
+        p:nth-child(2),
+        p:nth-child(3) {
+          color: var(--very-light-pink);
+        }
+
+        p:nth-child(3) {
+          padding-bottom: 20px;
+        }
+
+        button.holaDetalles {
+          width: 100%;
+          height: 50px;
+          background-color: var(--hospital-green);
+          border-radius: 8px;
+          border: none;
+          color: var(--white);
+          width: 100%;
+          cursor: pointer;
+          font-size: var(--md);
+          font-weight: bold;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          img.holaDetalles {
+            background-color: var(--hospital-green);
+            padding: 0 5px;
+            width: 40px;
+            height: 40px;
+          }
+        }
+      }
+    }
+
+    @media (max-width: 640px) {
+      div.cajaPrincipalDetalles {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="cajaPrincipalDetalles">
+
+    <div class="imagenx">
+      <img class="imagenx" src="./icons/icon_close.png" alt="">
+    </div>
+
+    <img class="portada"
+      src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+      alt="">
+
+    <div class="cajaDetalles">
+      <p>$120,00</p>
+      <p>Retro refrigerator</p>
+      <p>With its functional and practical interior, this
+        refrigerator also fulfills a decorative function,
+        adding personality and a retro-vintage
+        aesthetic to your kitchen or workplace.
+      </p>
+      <button class="holaDetalles">
+        <img class="holaDetalles" src="./icons/bt_add_to_cart.svg" alt="">
+        Add to card
+      </button>
+    </div>
+  </div>
+</body>
+
+</html>
